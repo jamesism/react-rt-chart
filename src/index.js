@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import createReactClass from 'create-react-class';
 import c3 from 'c3';
 import merge from 'deepmerge';
@@ -145,10 +146,10 @@ var RTChart = createReactClass({
   },
 
   propTypes: {
-    dateFormat: React.PropTypes.string,
-    chart: React.PropTypes.object,
-    fields: React.PropTypes.array.isRequired,
-    maxValues: React.PropTypes.number
+    dateFormat: PropTypes.string,
+    chart: PropTypes.object,
+    fields: PropTypes.array.isRequired,
+    maxValues: PropTypes.number
   }
 });
 
