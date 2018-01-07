@@ -10,6 +10,10 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _createReactClass = require('create-react-class');
 
 var _createReactClass2 = _interopRequireDefault(_createReactClass);
@@ -188,10 +192,10 @@ var RTChart = (0, _createReactClass2.default)({
   },
 
   propTypes: {
-    dateFormat: _react2.default.PropTypes.string,
-    chart: _react2.default.PropTypes.object,
-    fields: _react2.default.PropTypes.array.isRequired,
-    maxValues: _react2.default.PropTypes.number
+    dateFormat: _propTypes2.default.string,
+    chart: _propTypes2.default.object,
+    fields: _propTypes2.default.array.isRequired,
+    maxValues: _propTypes2.default.number
   }
 });
 
