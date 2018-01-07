@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import createReactClass from 'create-react-class';
 import c3 from 'c3';
 import merge from 'deepmerge';
 import loadHistoryData from './loadHistoricalData';
@@ -25,7 +26,7 @@ const updateHistoricalData = (props, nextProps) => {
   return nextData.length != lastData.length;
 }
 
-var RTChart = React.createClass({
+var RTChart = createReactClass({
 
   componentDidMount: function() {
 
